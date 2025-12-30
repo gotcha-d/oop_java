@@ -5,8 +5,8 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         Judge judge = new Judge();
-        Player player1 = new Player("たかし");
-        Player player2 = new Player("花子");
-        judge.startJanken(player1, player2);
+        Player yamada = new Yamada("山田"); // 山田はパーしか出さない
+        Player murata = new Murata("村田"); // 村田はグーしか出さない
+        judge.startJanken(yamada, murata);
     }
 }
