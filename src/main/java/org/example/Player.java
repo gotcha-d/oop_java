@@ -9,6 +9,10 @@ public class Player {
     private String name;
     private int winCount = 0;
 
+    public Player(String name) {
+        this.name = name;
+    }
+
     public int hand() {
         double randomNum = 0;
         // プレイヤー1の手
@@ -45,5 +49,12 @@ public class Player {
      */
     public int getWinCount() {
         return winCount;
+    }
+
+    /**
+     * 自分の名前を答える
+     */
+    public String getName() {
+        return name;
     }
 }
