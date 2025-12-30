@@ -10,7 +10,7 @@ public class Judge {
 
         System.out.println("【ジャンケン開始】\n");
 
-        for (int i = 1; i <= 3; i++) {
+        for (int i = 1; i <= 5; i++) {
             System.out.println("【ジャンケン" + i +"回戦】\n");
             Player winner = judgeJanken(player1, player2);
             if (winner != null) {
