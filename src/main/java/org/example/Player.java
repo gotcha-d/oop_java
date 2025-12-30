@@ -20,13 +20,10 @@ public class Player {
         randomNum = Math.random() * 3;
         if (randomNum < 1) {
             hand = STONE;
-            System.out.println("プレイヤー1の手:グー");
         } else if (randomNum < 2) {
             hand = SCISSORS;
-            System.out.println("プレイヤー1の手:チョキ");
         } else if (randomNum < 3) {
             hand = PAPER;
-            System.out.println("プレイヤー1の手:パー");
         }
         return hand;
     }
