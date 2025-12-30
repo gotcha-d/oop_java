@@ -1,4 +1,4 @@
-package org.example;
+package org.example.players;
 
 public class Yamada extends Player {
     public Yamada(String name) {

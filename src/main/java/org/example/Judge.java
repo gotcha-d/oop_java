@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.players.Player;
+
 public class Judge {
     /**
      * じゃんけんを開始する

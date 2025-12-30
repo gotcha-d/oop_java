@@ -1,4 +1,6 @@
-package org.example;
+package org.example.players;
+
+import org.example.tactics.Tactics;
 
 public class Player {
 
@@ -8,24 +10,18 @@ public class Player {
 
     private String name;
     private int winCount = 0;
+    private Tactics tactics;
 
     public Player(String name) {
         this.name = name;
     }
 
+    public void setTactics(Tactics tactics) {
+        this.tactics = tactics;
+    }
+
     public int hand() {
-        double randomNum = 0;
-        // プレイヤー1の手
-        int hand = 0;
-        randomNum = Math.random() * 3;
-        if (randomNum < 1) {
-            hand = STONE;
-        } else if (randomNum < 2) {
-            hand = SCISSORS;
-        } else if (randomNum < 3) {
-            hand = PAPER;
-        }
-        return hand;
+        return tactics.readTactics();
     }
 
     /**
