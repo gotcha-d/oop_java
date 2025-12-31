@@ -1,6 +1,6 @@
-package org.example.tactics;
+package org.example.janken.tactics;
 
-import org.example.players.Player;
+import org.example.janken.players.Player;
 
 import java.util.*;
 

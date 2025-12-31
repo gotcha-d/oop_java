@@ -1,10 +1,10 @@
 package org.example;
 
-import org.example.players.Player;
-import org.example.tactics.AskTactics;
-import org.example.tactics.CyclicTactics;
-import org.example.tactics.RandomTactics;
-import org.example.tactics.Tactics;
+import org.example.janken.Judge;
+import org.example.janken.players.Player;
+import org.example.janken.tactics.CyclicTactics;
+import org.example.janken.tactics.RandomTactics;
+import org.example.janken.tactics.Tactics;
 
 //TIP コードを<b>実行</b>するには、<shortcut actionId="Run"/> を押すか
 // ガターの <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。

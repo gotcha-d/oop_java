@@ -1,4 +1,4 @@
-package org.example.tactics;
+package org.example.janken.tactics;
 
 public interface Tactics {
     /**

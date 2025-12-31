@@ -1,4 +1,4 @@
-package org.example.players;
+package org.example.janken.players;
 
 public class Murata extends Player {
     public Murata(String name) {

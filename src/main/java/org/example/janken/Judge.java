@@ -1,6 +1,6 @@
-package org.example;
+package org.example.janken;
 
-import org.example.players.Player;
+import org.example.janken.players.Player;
 
 public class Judge {
     /**

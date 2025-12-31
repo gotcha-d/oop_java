@@ -1,6 +1,6 @@
-package org.example.players;
+package org.example.janken.players;
 
-import org.example.tactics.Tactics;
+import org.example.janken.tactics.Tactics;
 
 public class Player {
 

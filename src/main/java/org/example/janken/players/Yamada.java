@@ -1,4 +1,4 @@
-package org.example.players;
+package org.example.janken.players;
 
 public class Yamada extends Player {
     public Yamada(String name) {
