@@ -11,9 +11,9 @@ public class Card {
     public static final int SUIT_CLUB = 3;
     public static final int SUIT_HEART = 4;
 
-    public Card(int number, int suit) {
-        this.number = number;
+    public Card(int suit, int number) {
         this.suit = suit;
+        this.number = number;
     }
 
     public int getNumber() {

@@ -29,10 +29,10 @@ public class Hand {
         int handSize = hand.size();
         int pos;
 
-        for (int count = 0; count < handSize; count++){
+        for (int count = 0; count < handSize * 2; count++){
             pos = (int) (Math.random() * handSize);
             Card pickedCard = hand.remove(pos);
-            add(pickedCard); // this.hand.addとするのと結果は同じ？
+            hand.add(pickedCard); // this.hand.addとするのと結果は同じ？
         }
     }
 
@@ -53,19 +53,18 @@ public class Hand {
         int handSize = hand.size();
         Card[] sameCards = null;
 
-        if (handSize < 2) {
-            // 手札が2枚以上あるときだけペアが存在する
-            return  sameCards;
-        }
-
-        // 最後に追加されたカード
-        int lastAddedNumber = hand.getLast().getNumber();
-        for (int i = 0; i < handSize -1 ; i++) {
-            Card card = hand.get(i);
-            if (card.getNumber() == lastAddedNumber) {
-                sameCards = new Card[2];
-                sameCards[0] = hand.removeLast();
-                sameCards[1] = hand.remove(i);
+        if (handSize > 0) {
+            // 最後に追加されたカード
+            int lastAddedNumber = hand.getLast().getNumber();
+            // 同じ数字のカードがあるか走査
+            for (int i = 0; i < handSize - 1; i++) {
+                Card card = hand.get(i);
+                if (card.getNumber() == lastAddedNumber) {
+                    sameCards = new Card[2];
+                    sameCards[0] = hand.removeLast();
+                    sameCards[1] = hand.remove(i);
+                    break;
+                }
             }
         }
         return sameCards;
